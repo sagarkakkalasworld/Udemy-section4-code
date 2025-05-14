@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/Udemy-section-code
+cd /home/ubuntu/Udemy-section4-code
 git pull
 chmod 744 push_docker_image.sh
 /home/ubuntu/Udemy-section-code/push_docker_image.sh
