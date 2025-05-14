@@ -17,7 +17,7 @@ pipeline {
         stage('Build React code') {
             steps {
                 script {
-                    // Execute build script on Build Server
+                    // Execute build script on Demo Server
                     sh "ssh ubuntu@172.31.30.63 '/home/ubuntu/Udemy-section4-code/build.sh'"
                 }
             }
@@ -26,7 +26,7 @@ pipeline {
         stage('Deploy in nginx') {
             steps {
                 script {
-                    // Execute deploy script on Deploy Server
+                    // Execute deploy script on Demo Server
                     sh "ssh ubuntu@172.31.30.63 '/home/ubuntu/Udemy-section4-code/deploy.sh'"
                 }
             }
