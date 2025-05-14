@@ -1,5 +1,6 @@
 pipeline {
-    agent slave
+    agent { label 'slave' } // Replace 'slave' with your actual node label
+
     
     stages {
         stage('Build React code') {
